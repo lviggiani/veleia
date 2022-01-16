@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Veleia",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/lviggiani/veleia/issues"
   },
-  "homepage": "https://github.com/lviggiani/veleia#readme"
+  "homepage": "https://github.com/lviggiani/veleia#readme",
+  "dependencies": {
+    "sqlite3": "*",
+    "express": "*",
+    "cookie-parser": "*"
+  }
 }
