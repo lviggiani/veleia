@@ -21,6 +21,7 @@
   "dependencies": {
     "sqlite3": "*",
     "express": "*",
-    "cookie-parser": "*"
+    "cookie-parser": "*",
+    "http-status-codes": "*"
   }
 }
