@@ -1,12 +1,19 @@
 import * as Queries from './queries.js';
 
 async function main(){
-    const response = await fetch("/api/query", {
+    /*const response = await fetch("/api/query", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({ query: Queries.OBLIGATIONES_ALL })
+    });*/
+
+    const response = await fetch("/api/obligationes", { 
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
     });
 
     console.log(await response.json());
