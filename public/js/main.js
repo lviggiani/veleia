@@ -1,5 +1,3 @@
-import * as Queries from './queries.js';
-
 async function main(){
     /*const response = await fetch("/api/query", {
         method: "POST",
