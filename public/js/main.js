@@ -1,12 +1,6 @@
-async function main(){
-    /*const response = await fetch("/api/query", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ query: Queries.OBLIGATIONES_ALL })
-    });*/
+import { Widgets } from "/vee/index.js";
 
+async function main(){
     const response = await fetch("/api/obligationes", { 
         method: "GET",
         headers: {
@@ -15,6 +9,8 @@ async function main(){
     });
 
     console.log(await response.json());
+
+    console.log(Widgets);
 }
 
 window.addEventListener("load", main);
