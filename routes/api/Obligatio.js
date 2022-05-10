@@ -13,7 +13,7 @@ export default class Obligatio extends DBTable {
     async getSortes(){
         this.sortes = await Promise.all((
             await DBTable.all(this.db, "SELECT * FROM obligationes_sortes WHERE fkObligationes = ?", undefined, [this.idObligationes]))
-        .map(item => Sorte.get(this.db, item.fkSortes)));
+        .map(async item => (await Sorte.get(this.db, item.fkSortes)).full()));
     }
 
     async full(){
