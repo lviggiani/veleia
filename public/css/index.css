@@ -2,3 +2,21 @@
 body {
     font-family: "Montserrat";
 }
+
+td {
+    padding: 4px;
+}
+
+/*tr:nth-child(even) {
+    background-color: #eee;
+}*/
+
+.loan, .estimate, .value {
+    float: right;
+}
+
+.loan::after, .estimate::after, .value::after {
+    content: "HS";
+    padding-left: .25em;
+    font-weight: bold;
+} 
