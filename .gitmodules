@@ -1,0 +1,3 @@
+[submodule "vee"]
+	path = vee
+	url = git@github.com:lviggiani/vee.git
