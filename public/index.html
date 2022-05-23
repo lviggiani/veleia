@@ -6,6 +6,13 @@
         <script src="/js/main.js" type="module"></script>
     </head>
     <body>
-        <vee-table-view columns="obligatio:name, estimate, loan, :sortes, sorte:value" id="mainTable" src="/api/obligationes"></vee-table-view>
+        <vee-table-view 
+        id="mainTable" src="/api/obligationes"
+        columns="obligatio:name, estimate, loan,
+        :sortes, sorte:sortes.value,
+        :aestimationes, aestimatione:aestimationes.value,
+        :praedia, praedia:praedia.name, share:praedia.share"
+        
+        formats="praedia.share:percent"></vee-table-view>
     </body>
 </html>
